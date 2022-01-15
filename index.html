@@ -11,23 +11,23 @@
 <body>
     <div class="simple-calc">
         <form id="calc-form">
-            <input id="calc-input" type="text" />
-            <button class='btn btn_num' title="7" type="submit">7</button>
-            <button class='btn btn_num' title="8" type="submit">8</button>
-            <button class='btn btn_num' title="9" type="submit">9</button>
-            <button class='btn btn_sign' title="/" type="submit">/</button>
-            <button class='btn btn_num' title="4" type="submit">4</button>
-            <button class='btn btn_num' title="5" type="submit">5</button>
-            <button class='btn btn_num' title="6" type="submit">6</button>
-            <button class='btn btn_sign' title="*" type="submit">*</button>
-            <button class='btn btn_num' title="3" type="submit">3</button>
-            <button class='btn btn_num' title="2" type="submit">2</button>
-            <button class='btn btn_num' title="1" type="submit">1</button>
-            <button class='btn btn_sign' title="-" type="submit">-</button>
-            <button class='btn btn_num' title="0" type="submit">0</button>
-            <button class='btn btn_sign' title="clear" type="submit">c</button>
-            <button class='btn btn_sign' title="=" type="submit">=</button>
-            <button class='btn btn_sign' title="+" type="submit">+</button>
+            <input id="calc-input" type="text" disabled/>
+            <button class='btn btn_num' onclick="num(7)" title="7" type="submit">7</button>
+            <button class='btn btn_num' onclick="num(8)" title="8" type="submit">8</button>
+            <button class='btn btn_num' onclick="num(9)" title="9" type="submit">9</button>
+            <button class='btn btn_sign' onclick="sign('/')" title="/" type="submit">/</button>
+            <button class='btn btn_num' onclick="num(4)" title="4" type="submit">4</button>
+            <button class='btn btn_num' onclick="num(5)" title="5" type="submit">5</button>
+            <button class='btn btn_num' onclick="num(6)" title="6" type="submit">6</button>
+            <button class='btn btn_sign' onclick="sign('*')" title="*" type="submit">*</button>
+            <button class='btn btn_num' onclick="num(3)" title="3" type="submit">3</button>
+            <button class='btn btn_num' onclick="num(2)" title="2" type="submit">2</button>
+            <button class='btn btn_num' onclick="num(1)" title="1" type="submit">1</button>
+            <button class='btn btn_sign' onclick="sign('-')" title="-" type="submit">-</button>
+            <button class='btn btn_num' onclick="num(0)" title="0" type="submit">0</button>
+            <button class='btn btn_sign' onclick="clearInput()" title="clear" type="submit">c</button>
+            <button class='btn btn_sign' onclick="calcResult()" title="=" type="submit">=</button>
+            <button class='btn btn_sign' onclick="sign('+')" title="+" type="submit">+</button>
         </form>
     </div>
 
