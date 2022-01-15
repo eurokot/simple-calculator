@@ -14,6 +14,7 @@ Training project. Built to practice __JavaScript__. List of technologies used:
 
 _Simple calculator. Stores the value of the calculation for further manipulation with it. Button to clear the entire queue. Also some styling and hover effect._
 
+___
 __**My contacts:**__
 
 [Telegram](https://t.me/eurokot)
