@@ -1,10 +1,6 @@
 const log = console.log;
 const calcInput = document.querySelector('#calc-input');
-const calcForm = document.querySelector('#calc-form');
-
-calcForm.addEventListener('submit', function(event) {
-    event.preventDefault();
-});
+const btn = document.querySelectorAll('.btn');
 
 let calc = '';
 let result = 0;
@@ -55,3 +51,17 @@ const clearInput = () => {
     calc = '';
     result = 0;
 }
+
+const handler = (e) => {
+    let find = e.target.dataset;
+    return "num" in find ? num(parseInt(find.num)) : 
+            "sign" in find ? sign(find.sign) :
+            "clear" in find ? clearInput() :
+            "equals" in find ? calcResult() :
+            "Nothing found";
+}
+
+
+btn.forEach((button) => {
+    button.addEventListener('click', handler);
+});
