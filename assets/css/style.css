@@ -7,7 +7,10 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-body {
+.container {
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
     background: -webkit-linear-gradient(45deg, rgb(45, 0, 99), rgb(0, 126, 31));
     background: -moz-linear-gradient(45deg, rgb(45, 0, 99), rgb(0, 126, 31));
     background: linear-gradient(45deg, rgb(45, 0, 99), rgb(0, 126, 31));
